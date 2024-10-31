@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para o Evento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Inscreva-se para o Evento</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha suas Preferências</legend>
+            <label for="tipo-evento">Tipo de Evento</label>
+            <select id="tipo-evento" name="tipo-evento" required>
+                <option value="">Selecione...</option>
+                <option value="workshop">Workshop</option>
+                <option value="palestra">Palestra</option>
+                <option value="seminario">Seminário</option>
+            </select>
+
+            <div class="checkbox-group">
+                <label>Preferências Alimentares</label>
+                <div>
+                    <input type="checkbox" id="vegetariano" name="preferencias" value="vegetariano">
+                    <label for="vegetariano">Vegetariano</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="vegano" name="preferencias" value="vegano">
+                    <label for="vegano">Vegano</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sem-gluten" name="preferencias" value="sem-gluten">
+                    <label for="sem-gluten">Sem Glúten</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="carnivoro" name="preferencias" value="carnivoro">
+                    <label for="carnivoro">Carnívoro</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários e Preferências Adicionais</legend>
+            <label for="comentarios">Comentários</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe seus comentários ou preferências aqui"></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+</div>
+
+</body>
+</html>
